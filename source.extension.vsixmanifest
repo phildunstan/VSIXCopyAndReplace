@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="VSIXCopyAndReplace.Philip Dunstan.00a1d866-d18f-4025-b4e7-8bc24ce4f9d2" Version="1.0" Language="en-US" Publisher="Philip Dunstan" />
-    <DisplayName>VSIXCopyAndReplace</DisplayName>
+    <DisplayName>Copy and Replace</DisplayName>
     <Description xml:space="preserve">Visual Studio extension for adding a "Copy and Replace" command. This command copies the selected text to the Clipboard, while at the same time replacing it with the text previously held in the Clipboard.</Description>
     <License>LICENSE</License>
     <ReleaseNotes>Initial Version</ReleaseNotes>
