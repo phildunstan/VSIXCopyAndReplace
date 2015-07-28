@@ -36,6 +36,9 @@
          group as the part of a menu contained between two lines. The parent of a group
          must be a menu. -->
     <Groups>
+      <!--<Group guid="guidCopyAndReplacePackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>-->
       <Group guid="guidCopyAndReplacePackageCmdSet" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_EDIT"/>
       </Group>
@@ -59,7 +62,7 @@
         <Parent guid="guidCopyAndReplacePackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>Invoke CopyAndReplace</ButtonText>
+          <ButtonText>Copy and Replace</ButtonText>
         </Strings>
       </Button>
     </Buttons>
@@ -77,11 +80,10 @@
 
   
   <KeyBindings>
-    <KeyBinding guid="guidCopyAndReplacePackageCmdSet" id="CopyAndReplaceId"
-      editor="guidVSStd97" key1="C" mod1="ALT"/>
+    <KeyBinding guid="guidCopyAndReplacePackageCmdSet" id="CopyAndReplaceId" editor="guidVSStd97" key1="C" mod1="ALT"/>
   </KeyBindings>
-    
-      
+
+  
   <Symbols>
     <!-- This is the package guid. -->
     <GuidSymbol name="guidCopyAndReplacePackage" value="{e2195c19-efbe-4843-a305-09f7daa21461}" />
