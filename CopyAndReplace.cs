@@ -103,13 +103,12 @@ namespace VSIXCopyAndReplace
             var selection = _app.ActiveDocument.Selection as TextSelection;
             if (selection != null)
             {
-                var selectedText = selection.Text;
                 var clipboardData = Clipboard.GetDataObject();
-                if (clipboardData.GetDataPresent(DataFormats.Text))
-                    selection.Text = (string)clipboardData.GetData(DataFormats.Text);
-                else
-                    selection.Text = "";
-                Clipboard.SetDataObject(selectedText, true);
+                var clipboardText = "";
+                if (Clipboard.ContainsText(TextDataFormat.Text))
+                    clipboardText = Clipboard.GetText(TextDataFormat.Text);
+                selection.Copy();
+                selection.Text = clipboardText;
             }
         }
     }
